@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
 import Card from "./Card";
 import Loader from "./Loader";
 import { FaAngleDoubleDown } from "react-icons/fa";
