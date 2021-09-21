@@ -61,11 +61,11 @@ const Shopify = () => {
   }, [url, endDates]);
 
   state.loading && (content = <Loader />);
-  state.error && (content = <p>Loading... Kindly Add A Valid End Date!</p>);
+  state.error && (content = <p>Ooops... An Error Occured</p>);
 
   return (
     <div className="flex flex-col justify-center mt-10 items-center mx-auto w-10/12">
-      <h1 className="md:text-2xl text-gray-700 flex mb-10 text-center items-center gap-3">
+      <h1 className="md:text-2xl font-medium text-gray-700 flex mb-10 text-center items-center gap-3">
         Spacestagram: Image-sharing from the final frontier{" "}
         <FaAngleDoubleDown className="animate-ping text-sm" />
       </h1>
@@ -99,7 +99,7 @@ const Shopify = () => {
           className={` grid mt-10  ${
             endDate === undefined
               ? "grid-cols-1"
-              : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+              : "grid-cols-1 md:grid-cols-2 lg:grid-col-auto"
           } mx-auto justify-center gap-6`}
         >
           {endDate === undefined ? (
