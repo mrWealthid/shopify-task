@@ -70,14 +70,14 @@ const Shopify = () => {
         <FaAngleDoubleDown className="animate-ping text-sm" />
       </h1>
 
-      <div className="flex md:flex-row flex-col space-y-4 md: space-y-0 justify-center w-full">
+      <div className="flex md:flex-row flex-col  items-center justify-center w-full">
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           selectsStart
           startDate={startDate}
           endDate={endDate}
-          className="rounded-lg text-sm md:text-base"
+          className="rounded-lg text-sm mb-2 md:mb-0 p-3 md:text-base"
           placeholderText="Start Date.."
           dateFormat="yyyy-MM-d"
         />
@@ -89,7 +89,7 @@ const Shopify = () => {
           endDate={endDate}
           minDate={startDate}
           placeholderText="End Date.."
-          className="rounded-lg text-sm md:text-base"
+          className="rounded-lg text-sm p-3 md:text-base"
           dateFormat="yyyy-MM-d"
         />
       </div>

@@ -28,7 +28,7 @@ const LikeButton = () => {
     <div>
       <button
         onClick={count > 0 ? handleUnLike : handleLike}
-        className="bg-gray-700 py-2 flex  gap-2 items-center px-3 my-2 rounded-lg text-white"
+        className="bg-gray-600 py-1 flex gap-2 items-center px-4 my-2 rounded-2xl text-white"
       >
         <span>
           {" "}

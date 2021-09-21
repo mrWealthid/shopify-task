@@ -77,6 +77,10 @@ module.exports = {
             filter: "blur(0.5px)",
             // -webkit-filter: "blur(0.5px)",
           },
+          "0%": {
+            transform: "scale(1.0)",
+            filter: "blur(0.5px)",
+          },
         },
         float: {
           "0%": {
